@@ -19,48 +19,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="lineageos_system_label">Sistema LineageOS</string>
-  <string name="permlab_publishCustomTile">crear una caxella personalizada dientro\'l panel d\'axustes rápidos</string>
-  <string name="permdesc_publishCustomTile">Permite qu\'una aplicación espublize una caxella d\'axustes rápidos.</string>
-  <string name="permlab_modifyNetworkSettings">camudar los axustes de rede del sistema</string>
-  <string name="permdesc_modifyNetworkSettings">Permite qu\'una aplicación faiga camudancies al mou avión y a los axustes de la rede de datos móviles.</string>
-  <string name="permlab_modifySoundSettings">camudar los axustes de soníu del sistema</string>
-  <string name="permdesc_modifySoundSettings">Permite qu\'una aplicación faiga camudancies a los axustes de soníu del mou d\'interrupción.</string>
-  <string name="permlab_bindCustomTileListenerService">arreyar a un serviciu d\'escucha de caxelles personalizaes</string>
-  <string name="permdesc_bindCustomTileListenerService">Permite qu\'una aplicación s\'arreye a la interfaz de nivel cimeru d\'un serviciu d\'escucha de caxelles personalizaes.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">ver l\'estáu\'l teléfonu y conexón de datos con sofitu pa SIMs múltiples</string>
-  <string name="permdesc_readMSPhoneState">Permite qu\'una aplicación vea l\'estáu\'l teléfonu y la conexón de datos con sofitu pa SIMs múltiples.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">modificar l\'estáu\'l teléfonu y la conexón de datos con sofitu pa SIMs múltiples</string>
-  <string name="permdesc_modifyMSPhoneState">Permite qu\'una aplicación modifique l\'estáu\'l teléfonu y la conexón de datos con sofitu pa SIMs múltiples.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">modificar perfiles del sistema</string>
   <string name="permdesc_modifyProfiles">Permite qu\'una aplicación modifique los perfiles del sistema.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">usar framework de hardware</string>
   <string name="permdesc_useHardwareFramework">Permite qu\'una aplicación acceda al framework de hardware de Lineage.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">camudar direutamente les alarmes</string>
-  <string name="permdesc_write_alarms">Permite qu\'una aplicación amieste, modifique o desanicie toles tos alarmes.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">alternar alarmes planificaes</string>
-  <string name="permdesc_manage_alarms">Permite qu\'una aplicación des/active les tos alarmes planificaes.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">acceder a alarmes planificaes</string>
-  <string name="permdesc_read_alarms">Permite qu\'una aplicación llea les tos alarmes planificaes.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">modificar axustes del sistema Lineage</string>
   <string name="permdesc_writeSettings">Permite qu\'una aplicación modifique los axustes del sistema Lineage.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">modificar axustes del sistema de seguranza Lineage</string>
   <string name="permdesc_writeSecureSettings">Permite qu\'una aplicación modifique los axustes del sistema de seguranza de Lineage. Nun s\'usa pa les aplicaciones normales.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">xestionar almacenamientu persistente</string>
-  <string name="permdesc_managePersistentStorage">Permite qu\'una aplicación llea o escriba propiedaes que quiciabes persistan dempués de reafitar el preséu.</string>
-  <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-  <string name="permlab_accessAppSuggestions">accesu a suxerencies d\'aplicaciones</string>
-  <string name="permdesc_accessAppSuggestions">Permite qu\'una aplicación acceda a les suxerencies d\'aplicaciones.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permdesc_protectedApp">Permite qu\'una aplicación conseñe a otres como protexíes y blóquiales.</string>
   <!-- Profiles -->

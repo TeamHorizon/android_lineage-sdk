@@ -19,49 +19,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="lineageos_system_label">Система LineageOS</string>
-  <string name="permlab_publishCustomTile">Створити власну плитку для панелі швидких налаштувань</string>
-  <string name="permdesc_publishCustomTile">Дозволяє додатку створити плитку швидких налаштувань.</string>
-  <string name="permlab_modifyNetworkSettings">змінювати налаштування мережі системи</string>
-  <string name="permdesc_modifyNetworkSettings">Дозволяє додатку вносити зміни в \"Режимі польоту\" і в налаштуваннях мобільної передачі даних.</string>
-  <string name="permlab_modifySoundSettings">змінювати звукові налаштування системи</string>
-  <string name="permdesc_modifySoundSettings">Дозволяє додатку вносити зміни налаштувань звуку в режимі сповіщень.</string>
-  <string name="permlab_bindCustomTileListenerService">прив’язати до власної служби</string>
-  <string name="permdesc_bindCustomTileListenerService">Дозволяє власникові прив\'язувати плитки до інтерфейсу високого рівня служб.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">переглядати стан телефону і з\'єднання даних з підтримкою до декількох SIM</string>
-  <string name="permdesc_readMSPhoneState">Дозволяє програмі переглядати стану телефону і з\'єднання даних з підтримкою до декількох SIM.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">змінювати стан телефону і з’єднання даних з підтримкою до декількох SIM</string>
-  <string name="permdesc_modifyMSPhoneState">Дозволяє програмі змінювати стан телефону і з’єднання даних з підтримкою до декількох SIM.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">зміна системних профілів</string>
   <string name="permdesc_modifyProfiles">Дозволяє додатку змінювати системні профілі.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">Взаємодія із обладнанням</string>
   <string name="permdesc_useHardwareFramework">Додаток зможе отримувати доступ до підсистеми апаратних абстракцій LineageOS.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">безпосередньо змінювати будильники</string>
-  <string name="permdesc_write_alarms">Дозволяє програмі додавати, змінювати або видаляти налаштування сигналів будильника.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">перемикання запланованих будильників</string>
-  <string name="permdesc_manage_alarms">Дозволяє програмі вмикати або вимикати будильники.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">доступ до запланованих будильників</string>
-  <string name="permdesc_read_alarms">Дозволяє програмі читати заплановані сигнали будильника.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">змінювати налаштування Lineage</string>
   <string name="permdesc_writeSettings">Дозволяє додатку змінювати системні налаштування Lineage.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">змінювати налаштування безпеки</string>
   <string name="permdesc_writeSecureSettings">Дозволяє додатку змінювати системні налаштування безпеки. Непотрібно звичайним додаткам.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">керування постійною пам\'яттю даних</string>
-  <string name="permdesc_managePersistentStorage">Дозволяє додатку зчитувати і записувати властивості, які можуть зберігатися навіть після відновлення заводських налаштувань.</string>
-  <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-  <string name="permlab_accessAppSuggestions">Доступ до рекомендованих додатків</string>
-  <string name="permdesc_accessAppSuggestions">Додаток зможе отримувати доступ до списку рекомендованих додатків.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Власна служба обробки плиток</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">додавання і видалення записів переліку захищених додатків</string>
   <string name="permdesc_protectedApp">Додаток зможе відмічати інші додатки як захищені і блокувати їх.</string>

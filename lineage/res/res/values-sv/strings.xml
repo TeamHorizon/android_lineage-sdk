@@ -19,49 +19,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="lineageos_system_label">LineageOS System</string>
-  <string name="permlab_publishCustomTile">skapa en anpassad bricka inom snabbinställningspanelen</string>
-  <string name="permdesc_publishCustomTile">Ger en app tillåtelse att publicera en snabbinställningsbricka.</string>
-  <string name="permlab_modifyNetworkSettings">ändra systeminställningar för nätverk</string>
-  <string name="permdesc_modifyNetworkSettings">Tillåter att en app gör ändringar för flygplansläge och nätverksinställningar för mobildata.</string>
-  <string name="permlab_modifySoundSettings">Ändra systemets ljudinställningar</string>
-  <string name="permdesc_modifySoundSettings">Tillåter att en app ändrar på ljudinställningarnas avbrottsläge.</string>
-  <string name="permlab_bindCustomTileListenerService">bind till en anpassad tjänst som lyssnar efter brickor</string>
-  <string name="permdesc_bindCustomTileListenerService">Låter appen binda sig till ett högnivågränssnitt för en anpassad lyssnartjänst för brickor.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">visa telefonens status och dataförbindelsestöd med flera SIM-kort</string>
-  <string name="permdesc_readMSPhoneState">Tillåter att en app visar telefonens status och dataförbindelsestöd med flera SIM-kort.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">ändra telefonens status och dataförbindelsestöd med flera SIM-kort</string>
-  <string name="permdesc_modifyMSPhoneState">Tillåter att en app ändrar telefonens status och dataförbindelsestöd med flera SIM-kort.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">ändra systemprofiler</string>
   <string name="permdesc_modifyProfiles">Tillåter att en app ändrar systemprofiler.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">använda hårdvaruramverk</string>
   <string name="permdesc_useHardwareFramework">Ger en app åtkomst till LineageOS hårdvaruramverk.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">ändra alarm direkt</string>
-  <string name="permdesc_write_alarms">Tillåter att en app lägger till, ändrar eller tar bort alla dina alarm.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">växla schemalagda alarm</string>
-  <string name="permdesc_manage_alarms">Tillåter att en app sätter på eller stänger av dina schemalagda alarm.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">åtkomst till schemalagda alarm</string>
-  <string name="permdesc_read_alarms">Tillåt att en app läser dina schemalagda alarm.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">ändra Lineage systeminställningar</string>
   <string name="permdesc_writeSettings">Tillåt att en app ändrar Lineage systeminställningar.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">ändra Lineage säkra systeminställningar</string>
   <string name="permdesc_writeSecureSettings">Tillåt att en app ändrar Lineage säkra systeminställningar. Inte för användning av normala appar.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">hantera beständig lagring</string>
-  <string name="permdesc_managePersistentStorage">Tillåt att en app läser och skriver egenskaper som kan kvarstå efter en fabriksåterställning.</string>
-  <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-  <string name="permlab_accessAppSuggestions">komma åt appförslag</string>
-  <string name="permdesc_accessAppSuggestions">Ger en app åtkomst till appförslag.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Anpassad tjänst som lyssnar efter brickor</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">lägg till och ta bort appar som skyddade appar</string>
   <string name="permdesc_protectedApp">Ger en app tillstånd att markera andra appar som skyddade och låsa dem.</string>

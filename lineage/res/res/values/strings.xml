@@ -19,26 +19,6 @@
     <!-- Label for the LineageOS system components when they are shown to the user. -->
     <string name="lineageos_system_label">LineageOS System</string>
 
-    <string name="permlab_publishCustomTile">create a custom tile within quick settings panel</string>
-    <string name="permdesc_publishCustomTile">Allows an app to publish a quick settings tile.</string>
-
-    <string name="permlab_modifyNetworkSettings">change system network settings</string>
-    <string name="permdesc_modifyNetworkSettings">Allows an app to make changes to the airplane mode and mobile data network settings.</string>
-
-    <string name="permlab_modifySoundSettings">change system sound settings</string>
-    <string name="permdesc_modifySoundSettings">Allows an app to make changes to the interruption mode sound settings.</string>
-
-    <string name="permlab_bindCustomTileListenerService">bind to a custom tile listener service</string>
-    <string name="permdesc_bindCustomTileListenerService">Allows the app to bind to the top-level interface of a custom tile listener service.</string>
-
-    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-    <string name="permlab_readMSPhoneState">view the phone state and data connection with support to multiple SIMs</string>
-    <string name="permdesc_readMSPhoneState">Allows an app to view the phone state and data connection with support to multiple SIMs.</string>
-
-    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-    <string name="permlab_modifyMSPhoneState">modify the phone state and data connection with support to multiple SIMs</string>
-    <string name="permdesc_modifyMSPhoneState">Allows an app to modify the phone state and data connection with support to multiple SIMs.</string>
-
     <!-- Labels for the MODIFY_PROFILES permission. -->
     <string name="permlab_modifyProfiles">modify system profiles</string>
     <string name="permdesc_modifyProfiles">Allows an app to modify system profiles.</string>
@@ -47,18 +27,6 @@
     <string name="permlab_useHardwareFramework">use hardware framework</string>
     <string name="permdesc_useHardwareFramework">Allows an app access to the Lineage hardware framework.</string>
 
-    <!-- Labels for the WRITE_ALARMS permission. -->
-    <string name="permlab_write_alarms">directly change alarms</string>
-    <string name="permdesc_write_alarms">Allows an app to add, modify or delete all of your alarms.</string>
-
-    <!-- Labels for the MANAGE_ALARMS permission. -->
-    <string name="permlab_manage_alarms">toggle scheduled alarms</string>
-    <string name="permdesc_manage_alarms">Allows an app to turn on or off your scheduled alarms.</string>
-
-    <!-- Labels for the READ_ALARMS permission. -->
-    <string name="permlab_read_alarms">access scheduled alarms</string>
-    <string name="permdesc_read_alarms">Allows an app to read your scheduled alarms.</string>
-
     <!-- Labels for the WRITE_SETTINGS permission -->
     <string name="permlab_writeSettings">modify Lineage system settings</string>
     <string name="permdesc_writeSettings">Allows an app to modify Lineage system settings.</string>
@@ -66,17 +34,6 @@
     <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
     <string name="permlab_writeSecureSettings">modify Lineage secure system settings</string>
     <string name="permdesc_writeSecureSettings">Allows an app to modify Lineage secure system settings. Not for use by normal apps.</string>
-
-    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-    <string name="permlab_managePersistentStorage">manage persistent storage</string>
-    <string name="permdesc_managePersistentStorage">Allows an app to read or write properties which may persist thrοugh a factory reset.</string>
-
-    <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-    <string name="permlab_accessAppSuggestions">access app suggestions</string>
-    <string name="permdesc_accessAppSuggestions">Allows an app to access app suggestions.</string>
-
-    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-    <string name="custom_tile_listener_binding_label">Custom tile listener</string>
 
     <!-- Labels for the PROTECTED_APP permission. -->
     <string name="permlab_protectedApp">add and remove apps to protected apps</string>
@@ -115,7 +72,6 @@
     <string name="perf_profile_bias_power_summary">Favor power savings. Limit maximum CPU power and optimize for power saving at the cost of higher latency</string>
     <string name="perf_profile_bias_perf_summary">Favor performance. Reduces latency with slightly increased power consumption</string>
 
-
     <!-- LiveDisplay strings -->
     <string name="live_display_title" translatable="false">LiveDisplay</string>
     <string name="live_display_auto">Automatic</string>
@@ -141,23 +97,10 @@
     <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay changed to night mode.</string>
     <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay changed to outdoor mode.</string>
 
-
-
-
-    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-
-    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-
-    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-
     <!-- Performance manager permission title -->
     <string name="permlab_perfAccess">access performance manager</string>
     <!-- Performance manager permission description -->
     <string name="permdesc_perfAccessDesc">Allows an app to access the performance service. Should never be needed for normal apps.</string>
-
 
     <!-- Weather Service strings -->
     <string name="permlab_weather_read">read weather</string>

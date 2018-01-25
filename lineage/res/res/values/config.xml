@@ -16,30 +16,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Whether to enable app suggest overlay which allows app suggest
-         provider to be replaced by an app at run-time. When disabled, only
-         the config_appSuggestProviderPackageName will be searched for app
-         suggest provider, otherwise packages whos signature matches the
-         signature of config_appSuggestProviderPackageNames will be searched,
-         and the service with the highest version number will be picked.
-         Anyone who wants to disable the overlay mechanism can set it to false.
-
-         Note: There appears to be an issue with false if we reinstall the provider which causes
-         it to not get the update and fail to reconnect on package update.  It's safer to just
-         use the list version with config_appSuggestProviderPackageNames.
-         -->
-    <bool name="config_enableAppSuggestOverlay" translatable="false">true</bool>
-
-    <!-- Package name providing app suggest support. Used only when
-         config_enableAppSuggestOverlay is false. -->
-    <string name="config_appSuggestProviderPackageName" translatable="false">com.cyanogen.app.suggest</string>
-
-    <!-- List of packages providing app suggest support. Used only when
-    config_enableAppSuggestOverlay is true. -->
-    <string-array name="config_appSuggestProviderPackageNames" translatable="false">
-        <item>com.cyanogen.app.suggest</item>
-    </string-array>
-
     <!-- Automatic power profile management per app.
          Each item should list the fully-qualified activity
          name and the power profile id, separated by a comma. -->
@@ -102,25 +78,10 @@
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">8</integer>
 
-    <!-- Default, comma-delimited, quick settings tiles. See QSConstants.java for a list of all available tiles -->
-    <string name="config_defaultQuickSettingsTiles">wifi,bt,dnd,cell,airplane,rotation,location,edit,flashlight,cast,hotspot,inversion,live_display</string>
-
-    <!-- Wifi Service -->
-    <!-- Whether to make default hotspot security NONE-->
-    <bool name="config_wifiHotspotSecurityNone">false</bool>
-    <!-- Default wi-fi hotspot ssid -->
-    <string name="config_wifiHotSpotSsid" translatable="false"></string>
-    <!-- Default wi-fi hotspot pass -->
-    <string name="config_wifiHotSpotPass" translatable="false"></string>
-    <!-- Default wi-fi direct name -->
-    <string name="config_wifiDirectName" translatable="false"></string>
-
     <!-- Defines external services to be started by the LineageSystemServer at boot. The service itself
          should publish as a binder services in its onStart -->
     <string-array name="config_externalLineageServices">
-        <item>org.lineageos.platform.internal.LineageStatusBarManagerService</item>
         <item>org.lineageos.platform.internal.ProfileManagerService</item>
-        <item>org.lineageos.platform.internal.LineageTelephonyManagerService</item>
         <item>org.lineageos.platform.internal.LineageHardwareService</item>
         <item>org.lineageos.platform.internal.PerformanceManagerService</item>
         <item>org.lineageos.platform.internal.LineageWeatherManagerService</item>

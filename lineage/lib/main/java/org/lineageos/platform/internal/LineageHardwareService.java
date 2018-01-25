@@ -32,8 +32,6 @@ import lineageos.app.LineageContextConstants;
 import lineageos.hardware.ILineageHardwareService;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.hardware.DisplayMode;
-import lineageos.hardware.IThermalListenerCallback;
-import lineageos.hardware.ThermalListenerCallback;
 import lineageos.hardware.HSIC;
 import lineageos.hardware.TouchscreenGesture;
 
@@ -52,27 +50,21 @@ import org.lineageos.hardware.DisplayModeControl;
 import org.lineageos.hardware.HighTouchSensitivity;
 import org.lineageos.hardware.KeyDisabler;
 import org.lineageos.hardware.LongTermOrbits;
-import org.lineageos.hardware.PersistentStorage;
 import org.lineageos.hardware.PictureAdjustment;
 import org.lineageos.hardware.SerialNumber;
 import org.lineageos.hardware.SunlightEnhancement;
-import org.lineageos.hardware.ThermalMonitor;
-import org.lineageos.hardware.ThermalUpdateCallback;
 import org.lineageos.hardware.TouchscreenGestures;
 import org.lineageos.hardware.TouchscreenHovering;
-import org.lineageos.hardware.UniqueDeviceId;
 import org.lineageos.hardware.VibratorHW;
 
 /** @hide */
-public class LineageHardwareService extends LineageSystemService implements ThermalUpdateCallback {
+public class LineageHardwareService extends LineageSystemService {
 
     private static final boolean DEBUG = true;
     private static final String TAG = LineageHardwareService.class.getSimpleName();
 
     private final Context mContext;
     private final LineageHardwareInterface mLineageHwImpl;
-    private int mCurrentThermalState = ThermalListenerCallback.State.STATE_UNKNOWN;
-    private RemoteCallbackList<IThermalListenerCallback> mRemoteCallbackList;
 
     private final ArrayMap<String, String> mDisplayModeMappings =
             new ArrayMap<String, String>();
@@ -98,7 +90,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
         public long getLtoDownloadInterval();
 
         public String getSerialNumber();
-        public String getUniqueDeviceId();
 
         public boolean requireAdaptiveBacklightForSunlightEnhancement();
         public boolean isSunlightEnhancementSelfManaged();
@@ -107,9 +98,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
         public DisplayMode getCurrentDisplayMode();
         public DisplayMode getDefaultDisplayMode();
         public boolean setDisplayMode(DisplayMode mode, boolean makeDefault);
-
-        public boolean writePersistentBytes(String key, byte[] value);
-        public byte[] readPersistentBytes(String key);
 
         public int getColorBalanceMin();
         public int getColorBalanceMax();
@@ -156,12 +144,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
                 mSupportedFeatures |= LineageHardwareManager.FEATURE_AUTO_CONTRAST;
             if (DisplayModeControl.isSupported())
                 mSupportedFeatures |= LineageHardwareManager.FEATURE_DISPLAY_MODES;
-            if (PersistentStorage.isSupported())
-                mSupportedFeatures |= LineageHardwareManager.FEATURE_PERSISTENT_STORAGE;
-            if (ThermalMonitor.isSupported())
-                mSupportedFeatures |= LineageHardwareManager.FEATURE_THERMAL_MONITOR;
-            if (UniqueDeviceId.isSupported())
-                mSupportedFeatures |= LineageHardwareManager.FEATURE_UNIQUE_DEVICE_ID;
             if (ColorBalance.isSupported())
                 mSupportedFeatures |= LineageHardwareManager.FEATURE_COLOR_BALANCE;
             if (PictureAdjustment.isSupported())
@@ -190,8 +172,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
                     return TouchscreenHovering.isEnabled();
                 case LineageHardwareManager.FEATURE_AUTO_CONTRAST:
                     return AutoContrast.isEnabled();
-                case LineageHardwareManager.FEATURE_THERMAL_MONITOR:
-                    return ThermalMonitor.isEnabled();
                 default:
                     Log.e(TAG, "feature " + feature + " is not a boolean feature");
                     return false;
@@ -326,10 +306,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
             return SerialNumber.getSerialNumber();
         }
 
-        public String getUniqueDeviceId() {
-            return UniqueDeviceId.getUniqueDeviceId();
-        }
-
         public boolean requireAdaptiveBacklightForSunlightEnhancement() {
             return SunlightEnhancement.isAdaptiveBacklightRequired();
         }
@@ -352,14 +328,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
 
         public boolean setDisplayMode(DisplayMode mode, boolean makeDefault) {
             return DisplayModeControl.setMode(mode, makeDefault);
-        }
-
-        public boolean writePersistentBytes(String key, byte[] value) {
-            return PersistentStorage.set(key, value);
-        }
-
-        public byte[] readPersistentBytes(String key) {
-            return PersistentStorage.get(key);
         }
 
         public int getColorBalanceMin() {
@@ -443,26 +411,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
 
     @Override
     public void onStart() {
-        if (ThermalMonitor.isSupported()) {
-            ThermalMonitor.initialize(this);
-            mRemoteCallbackList = new RemoteCallbackList<IThermalListenerCallback>();
-        }
-    }
-
-    @Override
-    public void setThermalState(int state) {
-        mCurrentThermalState = state;
-        int i = mRemoteCallbackList.beginBroadcast();
-        while (i > 0) {
-            i--;
-            try {
-                mRemoteCallbackList.getBroadcastItem(i).onThermalChanged(state);
-            } catch (RemoteException e) {
-                // The RemoteCallbackList will take care of removing
-                // the dead object for us.
-            }
-        }
-        mRemoteCallbackList.finishBroadcast();
     }
 
     private DisplayMode remapDisplayMode(DisplayMode in) {
@@ -639,17 +587,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
         }
 
         @Override
-        public String getUniqueDeviceId() {
-            mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
-            if (!isSupported(LineageHardwareManager.FEATURE_UNIQUE_DEVICE_ID)) {
-                Log.e(TAG, "Unique device ID is not supported");
-                return null;
-            }
-            return mLineageHwImpl.getUniqueDeviceId();
-        }
-
-        @Override
         public boolean requireAdaptiveBacklightForSunlightEnhancement() {
             mContext.enforceCallingOrSelfPermission(
                     lineageos.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
@@ -724,71 +661,6 @@ public class LineageHardwareService extends LineageSystemService implements Ther
                 return false;
             }
             return mLineageHwImpl.setDisplayMode(mode, makeDefault);
-        }
-
-        @Override
-        public boolean writePersistentBytes(String key, byte[] value) {
-            mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_PERSISTENT_STORAGE, null);
-            if (key == null || key.length() == 0 || key.length() > 64) {
-                Log.e(TAG, "Invalid key: " + key);
-                return false;
-            }
-            // A null value is delete
-            if (value != null && (value.length > 4096 || value.length == 0)) {
-                Log.e(TAG, "Invalid value: " + (value != null ? Arrays.toString(value) : null));
-                return false;
-            }
-            if (!isSupported(LineageHardwareManager.FEATURE_PERSISTENT_STORAGE)) {
-                Log.e(TAG, "Persistent storage is not supported");
-                return false;
-            }
-            return mLineageHwImpl.writePersistentBytes(key, value);
-        }
-
-        @Override
-        public byte[] readPersistentBytes(String key) {
-            mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.MANAGE_PERSISTENT_STORAGE, null);
-            if (key == null || key.length() == 0 || key.length() > 64) {
-                Log.e(TAG, "Invalid key: " + key);
-                return null;
-            }
-            if (!isSupported(LineageHardwareManager.FEATURE_PERSISTENT_STORAGE)) {
-                Log.e(TAG, "Persistent storage is not supported");
-                return null;
-            }
-            return mLineageHwImpl.readPersistentBytes(key);
-        }
-
-        @Override
-        public int getThermalState() {
-            mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
-            if (isSupported(LineageHardwareManager.FEATURE_THERMAL_MONITOR)) {
-                return mCurrentThermalState;
-            }
-            return ThermalListenerCallback.State.STATE_UNKNOWN;
-        }
-
-        @Override
-        public boolean registerThermalListener(IThermalListenerCallback callback) {
-            mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
-            if (isSupported(LineageHardwareManager.FEATURE_THERMAL_MONITOR)) {
-                return mRemoteCallbackList.register(callback);
-            }
-            return false;
-        }
-
-        @Override
-        public boolean unRegisterThermalListener(IThermalListenerCallback callback) {
-            mContext.enforceCallingOrSelfPermission(
-                    lineageos.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
-            if (isSupported(LineageHardwareManager.FEATURE_THERMAL_MONITOR)) {
-                return mRemoteCallbackList.unregister(callback);
-            }
-            return false;
         }
 
         @Override

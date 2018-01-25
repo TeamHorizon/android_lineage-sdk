@@ -26,7 +26,6 @@
     <protected-broadcast android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
     <protected-broadcast android:name="lineageos.intent.action.ACTION_AUDIO_SESSIONS_CHANGED" />
     <protected-broadcast android:name="lineageos.platform.intent.action.PROFILE_SELECTED" />
-    <protected-broadcast android:name="org.lineageos.intent.action.HOTWORD_INPUT_CHANGED" />
 
     <protected-broadcast android:name="lineageos.intent.action.UPDATE_PREFERENCE" />
     <protected-broadcast android:name="lineageos.intent.action.REFRESH_PREFERENCE" />
@@ -35,48 +34,6 @@
     <protected-broadcast android:name="lineageos.platform.intent.action.INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED" />
 
     <protected-broadcast android:name="lineageos.platform.intent.action.UPDATE_TWILIGHT_STATE" />
-
-    <!-- Must be required by an, to ensure that only the system can bind to it.
-         @hide -->
-    <permission android:name="lineageos.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE"
-                android:label="@string/permlab_bindCustomTileListenerService"
-                android:description="@string/permdesc_bindCustomTileListenerService"
-                android:protectionLevel="signature" />
-
-    <!-- Allows a 3rd party application to publish or unpublish a quick settings tile -->
-    <permission android:name="lineageos.permission.PUBLISH_CUSTOM_TILE"
-                android:label="@string/permlab_publishCustomTile"
-                android:description="@string/permdesc_publishCustomTile"
-                android:icon="@drawable/ic_launcher_lineageos"
-                android:protectionLevel="normal" />
-
-    <!-- Allows an app to make changes to the airplane mode and mobile data network settings -->
-    <permission android:name="lineageos.permission.MODIFY_NETWORK_SETTINGS"
-                android:label="@string/permlab_modifyNetworkSettings"
-                android:description="@string/permdesc_modifyNetworkSettings"
-                android:icon="@drawable/ic_launcher_lineageos"
-                android:protectionLevel="signature|privileged" />
-
-    <!-- Allows an app to make changes to the interruption mode sound settings -->
-    <permission android:name="lineageos.permission.MODIFY_SOUND_SETTINGS"
-                android:label="@string/permlab_modifySoundSettings"
-                android:description="@string/permdesc_modifySoundSettings"
-                android:icon="@drawable/ic_launcher_lineageos"
-                android:protectionLevel="normal" />
-
-    <!-- Allows a 3rd party to view the phone SIM states and data connection -->
-    <permission android:name="lineageos.permission.READ_MSIM_PHONE_STATE"
-                android:label="@string/permlab_readMSPhoneState"
-                android:description="@string/permdesc_readMSPhoneState"
-                android:icon="@drawable/ic_launcher_lineageos"
-                android:protectionLevel="normal" />
-
-    <!-- Allows a 3rd party to modify the phone SIM states and data connection -->
-    <permission android:name="lineageos.permission.MODIFY_MSIM_PHONE_STATE"
-                android:label="@string/permlab_modifyMSPhoneState"
-                android:description="@string/permdesc_modifyMSPhoneState"
-                android:icon="@drawable/ic_launcher_lineageos"
-                android:protectionLevel="normal" />
 
     <!-- Allows an application access to the Lineage hardware abstraction framework
         <p>Not for use by third-party applications. -->
@@ -102,42 +59,6 @@
     <permission android:name="lineageos.permission.WRITE_SECURE_SETTINGS"
                 android:label="@string/permlab_writeSecureSettings"
                 android:description="@string/permdesc_writeSecureSettings"
-                android:protectionLevel="signature|privileged|development" />
-
-    <!-- Allows an application to write alarms to the default alarm clock application
-        <p>Not for use by third-party applications. -->
-    <permission android:name="lineageos.permission.WRITE_ALARMS"
-                android:permissionGroup="android.permission-group.SYSTEM_CLOCK"
-                android:protectionLevel="signature|privileged"
-                android:label="@string/permlab_write_alarms"
-                android:description="@string/permdesc_write_alarms"/>
-
-    <!-- Allows an application to manage alarms on the default alarm clock application -->
-    <permission android:name="lineageos.permission.MANAGE_ALARMS"
-                android:permissionGroup="android.permission-group.SYSTEM_CLOCK"
-                android:protectionLevel="normal"
-                android:label="@string/permlab_manage_alarms"
-                android:description="@string/permdesc_manage_alarms"/>
-
-    <!-- Allows an application to read alarms from the default alarm clock application -->
-    <permission android:name="lineageos.permission.READ_ALARMS"
-                android:permissionGroup="android.permission-group.SYSTEM_CLOCK"
-                android:protectionLevel="normal"
-                android:label="@string/permlab_read_alarms"
-                android:description="@string/permdesc_read_alarms"/>
-
-    <!-- Allows an application to access persistent property storage
-         <p>Not for use by third-party applications. -->
-    <permission android:name="lineageos.permission.MANAGE_PERSISTENT_STORAGE"
-                android:label="@string/permlab_managePersistentStorage"
-                android:description="@string/permdesc_managePersistentStorage"
-                android:protectionLevel="signature|privileged" />
-
-    <!-- Permission for accessing a provider of app suggestions
-         <p>Not for use by third-party applications. -->
-    <permission android:name="lineageos.permission.ACCESS_APP_SUGGESTIONS"
-                android:label="@string/permlab_accessAppSuggestions"
-                android:description="@string/permdesc_accessAppSuggestions"
                 android:protectionLevel="signature|privileged|development" />
 
     <!-- Permission for adding/removing applications to protected apps

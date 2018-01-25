@@ -19,49 +19,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="lineageos_system_label">LineageOS Sistemi</string>
-  <string name="permlab_publishCustomTile">hızlı ayarlar paneli içinde özel bir kare oluştur</string>
-  <string name="permdesc_publishCustomTile">Uygulamalara hızlı ayarlar karesi oluşturma izni verir.</string>
-  <string name="permlab_modifyNetworkSettings">sistem ağ ayarlarını değiştir</string>
-  <string name="permdesc_modifyNetworkSettings">Uygulamalara uçak modunu ve mobil veri şebeke ayarlarını değiştirme izni verir.</string>
-  <string name="permlab_modifySoundSettings">sistem ses ayarlarını değiştir</string>
-  <string name="permdesc_modifySoundSettings">Kesme modu, uygulamaya ses ayarlarını değiştirme izni verir.</string>
-  <string name="permlab_bindCustomTileListenerService">özel bir kare takip hizmetine bağla</string>
-  <string name="permdesc_bindCustomTileListenerService">Uygulamanın özel bir kare takip hizmetinin üst düzey arayüzüne bağlanmasına izin verir.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">telefon durumunu ve çoklu SIMler ile veri bağlantısı desteğini görüntüle</string>
-  <string name="permdesc_readMSPhoneState">Uygulamalara telefon durumunu ve çoklu SIMler ile veri bağlantısı desteğini görüntüleme imkanı verir.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">telefon durumunu ve çoklu SIMler ile veri bağlantısı desteğini değiştir</string>
-  <string name="permdesc_modifyMSPhoneState">Uygulamalara telefon durumunu ve çoklu SIMler ile veri bağlantısı desteğini değiştirme imkanı verir.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">sistem profillerini değiştir</string>
   <string name="permdesc_modifyProfiles">Uygulamaya sistem profillerini değiştirme izni verir.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">donanım altyapısını kullan</string>
   <string name="permdesc_useHardwareFramework">Uygulamanın Lineage donanım altyapısına erişimine izin verir.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">doğrudan alarmları değiştir</string>
-  <string name="permdesc_write_alarms">Uygulamalarınıza alarm ekleme, değiştirme ya da tümünü silme izni verir.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">programlı alarmları aç/kapa</string>
-  <string name="permdesc_manage_alarms">Uygulamaya planlı alarmları açma kapama izni verir.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">programlı alarmlara eriş</string>
-  <string name="permdesc_read_alarms">Uygulamalara planlanan alarmları okuma izni verir.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">Lineage sistem ayarlarını değiştir</string>
   <string name="permdesc_writeSettings">Uygulamalara Lineage sistem ayarlarını değiştirme izni verir.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">Lineage güvenli sistem ayarlarını değiştir</string>
   <string name="permdesc_writeSecureSettings">Uygulamalara Lineage güvenli sistem ayarlarını değiştirme izni verir. Normal uygulamalar için değildir.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">kalıcı depolama alanını yönet</string>
-  <string name="permdesc_managePersistentStorage">Uygulamalara fabrika ayarlarına dönüldüğünde kalıcı özellikleri okuma ve yazma izni verir.</string>
-  <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-  <string name="permlab_accessAppSuggestions">uygulama önerilerine eriş</string>
-  <string name="permdesc_accessAppSuggestions">Bir uygulamanın uygulama önerilerine erişiminine izin verir.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Özel kare takipçisi</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">korunan uygulamalara uygulama ekle ya da kaldır</string>
   <string name="permdesc_protectedApp">Uygulamalara diğer uygulamaları korunan uygulama olarak işaretleme ve kilitleme izni verir.</string>

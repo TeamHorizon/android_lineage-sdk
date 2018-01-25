@@ -19,31 +19,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="lineageos_system_label">LineageOS Süsteem</string>
-  <string name="permlab_publishCustomTile">loo kohandatud tahvel kiirseadete paneelil</string>
-  <string name="permdesc_publishCustomTile">Lubab rakendusel avaldada kiirseadete tahvli.</string>
-  <string name="permlab_modifyNetworkSettings">süsteemi võrgusätete muutmine</string>
-  <string name="permlab_modifySoundSettings">süsteemi helisätete muutmine</string>
-  <string name="permlab_bindCustomTileListenerService">Seo kohandatud tahvel kuulaja teenusega</string>
-  <string name="permdesc_bindCustomTileListenerService">Võimaldab siduda kõrgema taseme kasutajaliidese kohandatud tahvli kuulaja teenusega.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">telefoni oleku ja andmeühenduse vaatamine, toetades mitmeid SIMe</string>
-  <string name="permdesc_readMSPhoneState">Võimaldab rakendusel vaadata telefoni olekut ja andmeühendust, toetades mitmeid SIMe.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">telefoni oleku ja andmeühenduse muutmine, toetades mitmeid SIMe</string>
-  <string name="permdesc_modifyMSPhoneState">Võimaldab rakendusel muuta telefoni olekut ja andmeühendust, toetades mitmeid SIMe.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">kasutada riistvara raamistikku</string>
   <string name="permdesc_useHardwareFramework">Annab rakendusele ligipääsu Lineage riistvara raamistikule.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <!-- Labels for the READ_ALARMS permission. -->
   <!-- Labels for the WRITE_SETTINGS permission -->
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Kohandatud tahvli kuulaja</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <!-- Profiles -->
   <!-- Names of default profiles. -->

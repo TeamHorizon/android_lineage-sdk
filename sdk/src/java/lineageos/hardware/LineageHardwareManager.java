@@ -111,15 +111,6 @@ public final class LineageHardwareManager {
     public static final int FEATURE_SUNLIGHT_ENHANCEMENT = 0x100;
 
     /**
-     * Double-tap the touch panel to wake up the device
-     *
-     * @deprecated This functionality is replaced by AOSP's implementation as of Lineage 13.0.
-     */
-    @Deprecated
-    @VisibleForTesting
-    public static final int FEATURE_TAP_TO_WAKE = 0x200;
-
-    /**
      * Variable vibrator intensity
      */
     @VisibleForTesting
@@ -142,24 +133,6 @@ public final class LineageHardwareManager {
      */
     @VisibleForTesting
     public static final int FEATURE_DISPLAY_MODES = 0x2000;
-
-    /**
-     * Persistent storage
-     */
-    @VisibleForTesting
-    public static final int FEATURE_PERSISTENT_STORAGE = 0x4000;
-
-    /**
-     * Thermal change monitor
-     */
-    @VisibleForTesting
-    public static final int FEATURE_THERMAL_MONITOR = 0x8000;
-
-    /**
-     * Unique device ID
-     */
-    @VisibleForTesting
-    public static final int FEATURE_UNIQUE_DEVICE_ID = 0x10000;
 
     /**
      * Color balance
@@ -186,8 +159,7 @@ public final class LineageHardwareManager {
         FEATURE_KEY_DISABLE,
         FEATURE_SUNLIGHT_ENHANCEMENT,
         FEATURE_TOUCH_HOVERING,
-        FEATURE_AUTO_CONTRAST,
-        FEATURE_THERMAL_MONITOR
+        FEATURE_AUTO_CONTRAST
     );
 
     private static LineageHardwareManager sLineageHardwareManagerInstance;
@@ -507,132 +479,6 @@ public final class LineageHardwareManager {
     }
 
     /**
-     * Write a string to persistent storage, which persists thru factory reset
-     *
-     * @param key String identifier for this item. Must not exceed 64 characters.
-     * @param value The UTF-8 encoded string to store of at least 1 character. null deletes the key/value pair.
-     * @return true on success
-     */
-    public boolean writePersistentString(String key, String value) {
-        try {
-            if (checkService()) {
-                return sService.writePersistentBytes(key,
-                        value == null ? null : value.getBytes("UTF-8"));
-            }
-        } catch (RemoteException e) {
-        } catch (UnsupportedEncodingException e) {
-            Log.e(TAG, e.getMessage(), e);
-        }
-        return false;
-    }
-
-    /**
-     * Write an integer to persistent storage, which persists thru factory reset
-     *
-     * @param key String identifier for this item. Must not exceed 64 characters.
-     * @param value The integer to store
-     * @return true on success
-     */
-    public boolean writePersistentInt(String key, int value) {
-        try {
-            if (checkService()) {
-                return sService.writePersistentBytes(key,
-                        ByteBuffer.allocate(4).putInt(value).array());
-            }
-        } catch (RemoteException e) {
-        }
-        return false;
-    }
-
-    /**
-     * Write a byte array to persistent storage, which persists thru factory reset
-     *
-     * @param key String identifier for this item. Must not exceed 64 characters.
-     * @param value The byte array to store, must be 1-4096 bytes. null deletes the key/value pair.
-     * @return true on success
-     */
-    public boolean writePersistentBytes(String key, byte[] value) {
-        try {
-            if (checkService()) {
-                return sService.writePersistentBytes(key, value);
-            }
-        } catch (RemoteException e) {
-        }
-        return false;
-    }
-
-    /**
-     * Read a string from persistent storage
-     *
-     * @param key String identifier for this item. Must not exceed 64 characters.
-     * @return the stored UTF-8 encoded string, null if not found
-     */
-    public String readPersistentString(String key) {
-        try {
-            if (checkService()) {
-                byte[] bytes = sService.readPersistentBytes(key);
-                if (bytes != null) {
-                    return new String(bytes, "UTF-8");
-                }
-            }
-        } catch (RemoteException e) {
-        } catch (UnsupportedEncodingException e) {
-            Log.e(TAG, e.getMessage(), e);
-        }
-        return null;
-    }
-
-    /**
-     * Read an integer from persistent storage
-     *
-     * @param key String identifier for this item. Must not exceed 64 characters.
-     * @return the stored integer, zero if not found
-     */
-    public int readPersistentInt(String key) {
-        try {
-            if (checkService()) {
-                byte[] bytes = sService.readPersistentBytes(key);
-                if (bytes != null) {
-                    return ByteBuffer.wrap(bytes).getInt();
-                }
-            }
-        } catch (RemoteException e) {
-        }
-        return 0;
-    }
-
-    /**
-     * Read a byte array from persistent storage
-     *
-     * @param key String identifier for this item. Must not exceed 64 characters.
-     * @return the stored byte array, null if not found
-     */
-    public byte[] readPersistentBytes(String key) {
-        try {
-            if (checkService()) {
-                return sService.readPersistentBytes(key);
-            }
-        } catch (RemoteException e) {
-        }
-        return null;
-    }
-
-    /** Delete an object from persistent storage
-     *
-     * @param key String identifier for this item
-     * @return true if an item was deleted
-     */
-    public boolean deletePersistentObject(String key) {
-        try {
-            if (checkService()) {
-                return sService.writePersistentBytes(key, null);
-            }
-        } catch (RemoteException e) {
-        }
-        return false;
-    }
-
-    /**
      * {@hide}
      */
     public static final int GAMMA_CALIBRATION_RED_INDEX = 0;
@@ -784,19 +630,6 @@ public final class LineageHardwareManager {
         try {
             if (checkService()) {
                 return sService.getSerialNumber();
-            }
-        } catch (RemoteException e) {
-        }
-        return null;
-    }
-
-    /**
-     * @return an id that's both unique and deterministic for the device
-     */
-    public String getUniqueDeviceId() {
-        try {
-            if (checkService()) {
-                return sService.getUniqueDeviceId();
             }
         } catch (RemoteException e) {
         }
@@ -1007,47 +840,6 @@ public final class LineageHardwareManager {
             return false;
         }
         return true;
-    }
-
-    /**
-     * @return current thermal {@link lineageos.hardware.ThermalListenerCallback.State}
-     */
-    public int getThermalState() {
-        try {
-            if (checkService()) {
-                return sService.getThermalState();
-            }
-        } catch (RemoteException e) {
-        }
-        return ThermalListenerCallback.State.STATE_UNKNOWN;
-    }
-
-   /**
-    * Register a callback to be notified of thermal state changes
-    * @return boolean indicating whether register succeeded or failed
-    */
-    public boolean registerThermalListener(ThermalListenerCallback thermalCallback) {
-        try {
-            if (checkService()) {
-                return sService.registerThermalListener(thermalCallback);
-            }
-        } catch (RemoteException e) {
-        }
-        return false;
-    }
-
-   /**
-    * Unregister a callback previously registered to be notified of thermal state changes
-    * @return boolean indicating whether un-registering succeeded or failed
-    */
-    public boolean unRegisterThermalListener(ThermalListenerCallback thermalCallback) {
-        try {
-            if (checkService()) {
-                return sService.unRegisterThermalListener(thermalCallback);
-            }
-        } catch (RemoteException e) {
-        }
-        return false;
     }
 
     /**

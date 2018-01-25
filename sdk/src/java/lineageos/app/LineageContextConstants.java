@@ -33,16 +33,6 @@ public final class LineageContextConstants {
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
-     * {@link lineageos.app.LineageStatusBarManager} for informing the user of
-     * background events.
-     *
-     * @see android.content.Context#getSystemService
-     * @see lineageos.app.LineageStatusBarManager
-     */
-    public static final String LINEAGE_STATUS_BAR_SERVICE = "lineagestatusbar";
-
-    /**
-     * Use with {@link android.content.Context#getSystemService} to retrieve a
      * {@link lineageos.app.ProfileManager} for informing the user of
      * background events.
      *
@@ -55,18 +45,6 @@ public final class LineageContextConstants {
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
-     * {@link lineageos.app.LineageTelephonyManager} to manage the phone and
-     * data connection.
-     *
-     * @see android.content.Context#getSystemService
-     * @see lineageos.app.LineageTelephonyManager
-     *
-     * @hide
-     */
-    public static final String LINEAGE_TELEPHONY_MANAGER_SERVICE = "lineagetelephonymanager";
-
-    /**
-     * Use with {@link android.content.Context#getSystemService} to retrieve a
      * {@link lineageos.hardware.LineageHardwareManager} to manage the extended
      * hardware features of the device.
      *
@@ -76,11 +54,6 @@ public final class LineageContextConstants {
      * @hide
      */
     public static final String LINEAGE_HARDWARE_SERVICE = "lineagehardware";
-
-    /**
-     * @hide
-     */
-    public static final String LINEAGE_APP_SUGGEST_SERVICE = "lineageappsuggest";
 
     /**
      * Control device power profile and characteristics.
@@ -137,35 +110,11 @@ public final class LineageContextConstants {
 
         /**
          * Feature for {@link PackageManager#getSystemAvailableFeatures} and
-         * {@link PackageManager#hasSystemFeature}: The device includes the lineage status bar service
-         * utilzed by the lineage sdk.
-         */
-        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
-        public static final String STATUSBAR = "org.lineageos.statusbar";
-
-        /**
-         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
          * {@link PackageManager#hasSystemFeature}: The device includes the lineage profiles service
          * utilized by the lineage sdk.
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String PROFILES = "org.lineageos.profiles";
-
-        /**
-         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
-         * {@link PackageManager#hasSystemFeature}: The device includes the lineage app suggest service
-         * utilized by the lineage sdk.
-         */
-        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
-        public static final String APP_SUGGEST = "org.lineageos.appsuggest";
-
-        /**
-         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
-         * {@link PackageManager#hasSystemFeature}: The device includes the lineage telephony service
-         * utilized by the lineage sdk.
-         */
-        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
-        public static final String TELEPHONY = "org.lineageos.telephony";
 
         /**
          * Feature for {@link PackageManager#getSystemAvailableFeatures} and

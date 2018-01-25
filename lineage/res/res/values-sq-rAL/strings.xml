@@ -19,32 +19,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="lineageos_system_label">Sistemi LineageOS</string>
-  <string name="permlab_publishCustomTile">krijo një tjegull të personalizuar brenda panelit të parametrave të shpejtë</string>
-  <string name="permdesc_publishCustomTile">Lejo një aplikacion që të publikojë një tjegull të parametrave të shpejtë.</string>
-  <string name="permlab_modifyNetworkSettings">ndrysho parametrat e rrjetit të sistemit</string>
-  <string name="permdesc_modifyNetworkSettings">Lejon një aplikacion që bëjë ndryshime në parametrat e profilit Avion dhe në ato të rrjetit të internetit të celularit.</string>
-  <string name="permlab_modifySoundSettings">ndrysho parametrat e tingujve të sistemit</string>
-  <string name="permdesc_modifySoundSettings">Lejon aplikacionin që të ndryshojë parametrat e tingujve për mënyrën e ndërhyrjes.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">modifiko profilet e sistemit</string>
   <string name="permdesc_modifyProfiles">Lejon një aplikacion që të modifikojë profilet e sistemit.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">ndrysho direkt alarmet</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">akseso alarmet e caktuar</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">modifiko parametrat e sistemit Lineage</string>
   <string name="permdesc_writeSettings">Lejon një aplikacion që të modifikojë parametrat e sistemit Lineage.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-  <string name="permlab_accessAppSuggestions">akseso aplikacionet e sygjeruara</string>
-  <string name="permdesc_accessAppSuggestions">Lejon një aplikacion të aksesojë listën e aplikacioneve të sygjeruara.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permdesc_protectedApp">Lejon një aplikacion që t\'i etiketojë aplikacionet e tjera si të mbrojtura dhe t\'i bllokojë ato.</string>
   <!-- Profiles -->

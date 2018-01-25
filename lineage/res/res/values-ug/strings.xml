@@ -19,49 +19,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the LineageOS system components when they are shown to the user. -->
   <string name="lineageos_system_label">LineageOS سىستېمىسى</string>
-  <string name="permlab_publishCustomTile">تىز تەكشەك تاختىسىدا خاسلاشتۇرۇلغان خىش قۇرۇش</string>
-  <string name="permdesc_publishCustomTile">ئەپنىڭ بىر تىز تەڭشەك خىشى قۇرۇشىغا رۇخسەت قىلىش.</string>
-  <string name="permlab_modifyNetworkSettings">سىستېمىنىڭ تور تەڭشىنى ئۆزگەرتىش</string>
-  <string name="permdesc_modifyNetworkSettings">ئەپنىڭ ئۇچۇش ھالىتى ۋە تور ئېقىم تەڭشىكىنى ئۆزگەرتىشىگە يول قويۇش.</string>
-  <string name="permlab_modifySoundSettings">سىستېما ئاۋاز تەڭشىكىنى ئۆزگەرتىش</string>
-  <string name="permdesc_modifySoundSettings">ئەپنىڭ ئاۋارە قىلىش ھالىتى تەڭشىكىنى ئۆزگەرتىشىگە يول قويۇش.</string>
-  <string name="permlab_bindCustomTileListenerService">خاسلاشتۇرۇلغان خىش ئاڭلىغۇچى مۇلازىمىتېرغا ئۇلاش</string>
-  <string name="permdesc_bindCustomTileListenerService">ئەپنىڭ خاسلاشتۇرۇلغان خىش ئاڭلىغۇچى مۇلازىمىتېرنىڭ ئەڭ يوقىرى قاتلام يۈزىگە ئۇلاشقا يول قويۇش.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">كۆپ SIM كارتا قوللايدىغان تېلېفون ھالىتى ۋە تور ئۇلىنىشىنى كۆرۈش</string>
-  <string name="permdesc_readMSPhoneState">ئەپنىڭ كۆپ SIM كارتا قوللايدىغان تېلېفون ھالىتى ۋە تور ئۇلىنىشىنى كۆرۈشگە يول قويۇش.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">كۆپ SIM كارتا قوللايدىغان تېلېفون ھالىتى ۋە تور ئۇلىنىشىنى ئۆزگەرتىش</string>
-  <string name="permdesc_modifyMSPhoneState">ئەپنىڭ كۆپ SIM كارتا قوللايدىغان تېلېفون ھالىتى ۋە تور ئۇلىنىشىنى كۆرۈشگە يول قويۇش.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">سىستېما سەپلەنمىسىنى ئۆزگەرتىش</string>
   <string name="permdesc_modifyProfiles">ئەپنىڭ سىستېما سەپلەنمىسىنى ئۆزگەرتىشىگە يول قويۇش.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">قاتتىق دىتال جازىسىنى ئىشلىتىش</string>
   <string name="permdesc_useHardwareFramework">ئەپنىڭ Lineage قاتتىق دىتال جازىسىنى زىيارەت قىلىشىغا يول قويۇش.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">قوڭغۇراقنى بىۋاستە ئۆزگەرتىش</string>
-  <string name="permdesc_write_alarms">ئەپنىڭ قوڭغۇراق قوشۇش ياكى ئۆچۈرۈشىگە يول قويۇش.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">پىلاندىكى قوڭغۇراقنى ئېچىپ تاقاش</string>
-  <string name="permdesc_manage_alarms">ئەپنىڭ پىلاندىكى قوڭغۇراقنى ئېچىپ تاقىشىغا يول قويۇش.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">پىلاندىكى قوڭغۇراقنى زىيارەت قىلىش</string>
-  <string name="permdesc_read_alarms">ئەپنىڭ پىلاندىكى قوڭغۇراقنى زىيارەت قىلىشغا يول قويۇش.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">سىستېما Lineageنىڭ تەڭشىكىنى ئۆزگەرتىش</string>
   <string name="permdesc_writeSettings">سىستېما Lineageنىڭ تەڭشىكىنى ئۆزگەرتىشكە يول قويۇش.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">سىستېما Lineageنىڭ بىخەتەرلىك تەڭشىكىنى ئۆزگەرتىش</string>
   <string name="permdesc_writeSecureSettings">ئەپنىڭ سىستېما Lineageنىڭ بىخەتەرلىك تەڭشىكىنى ئۆزگەرتىشگە يول قويۇش.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">ئەبەدى ساقلىغۇچنى باشقۇرۇش</string>
-  <string name="permdesc_managePersistentStorage">ئەپنىڭ زاۋۇت ئەسلىگە قايتۇرغاندىن كىيىن ئۆزگەرمەيدىغان خۇسۇسىيىتىنى ئوقۇپ ۋە يېزىشىغا يول قويۇش.</string>
-  <!-- Labels for the ACCESS_APP_SUGGESTIONS permission -->
-  <string name="permlab_accessAppSuggestions">ئەپنىڭ چۈشەندۈرۈلىشىگە ئېرىشىش</string>
-  <string name="permdesc_accessAppSuggestions">بىرەر ئەپنىڭ ئەپ چۈشەندۈرۈشىگە ئېرىشىشگە رۇخسەت قىلىش.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">خىش تىشىغۇچنى خاسلاشتۇرۇش</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">قوغدالغان ئەپ تىزىمىگە ئەپ قوشۇش ياكى چىقىرۋېتىش</string>
   <string name="permdesc_protectedApp">ئەپنىڭ باشقا ئەپلەرنى قوغداش تىزىملىكىگە قوشۇشىغا ياكى تاقاپ قۇيىشىغا رۇخسەت قىلىش.</string>
