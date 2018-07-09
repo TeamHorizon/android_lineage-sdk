@@ -64,13 +64,6 @@ public class StyleInterface {
     public static final int STYLE_GLOBAL_DARK = 3;
 
     /**
-     * Global style: black
-     *
-     * @see #setGlobalStyle
-     */
-    public static final int STYLE_GLOBAL_BLACK = 4;
-
-    /**
      * Default accent name.
      * It can also be used to remove any active accent
      *
@@ -149,13 +142,11 @@ public class StyleInterface {
      * @see #STYLE_GLOBAL_AUTO_DAYTIME
      * @see #STYLE_GLOBAL_LIGHT
      * @see #STYLE_GLOBAL_DARK
-     * @see #STYLE_GLOBAL_BLACK
      * @param style The style mode to set the device to.
      *             One of {@link #STYLE_GLOBAL_AUTO_WALLPAPER},
      *             {@link #STYLE_GLOBAL_AUTO_DAYTIME},
-     *             {@link #STYLE_GLOBAL_LIGHT},
-     *             {@link #STYLE_GLOBAL_DARK} or
-     *             {@link #STYLE_GLOBAL_BLACK}
+     *             {@link #STYLE_GLOBAL_LIGHT} or
+     *             {@link #STYLE_GLOBAL_DARK}
      * @param pkgName The package name of the calling application
      *
      * @return Whether the process failed
@@ -177,9 +168,8 @@ public class StyleInterface {
      *
      * @return One of {@link #STYLE_GLOBAL_AUTO_WALLPAPER},
      *        {@link #STYLE_GLOBAL_AUTO_DAYTIME},
-     *        {@link #STYLE_GLOBAL_LIGHT},
-     *        {@link #STYLE_GLOBAL_DARK} or
-     *        {@link #STYLE_GLOBAL_BLACK}
+     *        {@link #STYLE_GLOBAL_LIGHT} or
+     *        {@link #STYLE_GLOBAL_DARK}
      */
     public int getGlobalStyle() {
         if (sService == null) {
