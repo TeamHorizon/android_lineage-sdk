@@ -16,5 +16,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_amber">كهرماني</string>
   <string name="accent_black">أسود</string>
+  <string name="accent_brown">بني</string>
+  <string name="accent_cyan">سماوي</string>
+  <string name="accent_demon">شيطان</string>
+  <string name="accent_denim">دنيم</string>
+  <string name="accent_gold">ذهبي</string>
+  <string name="accent_green">أخضر</string>
+  <string name="accent_grey">رمادي</string>
+  <string name="accent_orange">برتقالي</string>
+  <string name="accent_pink">وردي</string>
+  <string name="accent_purple">أرجواني</string>
+  <string name="accent_teal">أزرق مخضّر</string>
+  <string name="accent_turquoise">فيروز</string>
+  <string name="accent_yellow">أصفر</string>
 </resources>

@@ -16,5 +16,18 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Accent colors -->
+  <string name="accent_amber">Merevaigukollane</string>
   <string name="accent_black">Must</string>
+  <string name="accent_brown">Pruun</string>
+  <string name="accent_cyan">Erksinine</string>
+  <string name="accent_demon">Deemon</string>
+  <string name="accent_gold">Kuldne</string>
+  <string name="accent_green">Roheline</string>
+  <string name="accent_grey">Hall</string>
+  <string name="accent_orange">Oranž</string>
+  <string name="accent_pink">Roosa</string>
+  <string name="accent_purple">Lilla</string>
+  <string name="accent_teal">Sinakasroheline</string>
+  <string name="accent_turquoise">Türkiis</string>
+  <string name="accent_yellow">Kollane</string>
 </resources>
