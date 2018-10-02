@@ -33,11 +33,9 @@ public class XenonHDMaintainerTextView extends TextView {
         super(context, attrs);
         String maintainer = SystemProperties.get(KEY_XENONHD_MAINTAINER_PROP,"");
         if (maintainer == "") {
-            setText(SystemProperties.get(KEY_BUILD_USER_PROP,
-                    getContext().getResources().getString(R.string.unknown)));
+            setText(SystemProperties.get(KEY_BUILD_USER_PROP));
         } else {
-            setText(SystemProperties.get(KEY_XENONHD_MAINTAINER_PROP,
-                    getContext().getResources().getString(R.string.unknown)));
+            setText(SystemProperties.get(KEY_XENONHD_MAINTAINER_PROP));
         }
     }
 }

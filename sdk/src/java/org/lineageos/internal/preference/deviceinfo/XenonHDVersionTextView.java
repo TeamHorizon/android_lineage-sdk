@@ -30,7 +30,6 @@ public class XenonHDVersionTextView extends TextView {
 
     public XenonHDVersionTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setText(SystemProperties.get(KEY_XENONHD_VERSION_PROP,
-                getContext().getResources().getString(R.string.unknown)));
+        setText(SystemProperties.get(KEY_XENONHD_VERSION_PROP));
     }
 }
