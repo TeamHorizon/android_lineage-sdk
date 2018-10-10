@@ -31,8 +31,11 @@ public class XenonHDDeviceTextView extends TextView {
 
     public XenonHDDeviceTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setText(String.format("%s (%s)", SystemProperties.get(KEY_PRODUCT_MODEL_PROP),
+        if (KEY_XENONHD_DEVICE_PROP != KEY_PRODUCT_MODEL_PROP) {
+            setText(String.format("%s (%s)", SystemProperties.get(KEY_PRODUCT_MODEL_PROP),
                 SystemProperties.get(KEY_XENONHD_DEVICE_PROP)));
+        } else {
+            setText(SystemProperties.get(KEY_PRODUCT_MODEL_PROP));
+        }
     }
 }
-
