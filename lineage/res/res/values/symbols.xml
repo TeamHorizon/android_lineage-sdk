@@ -154,14 +154,24 @@
     <java-symbol type="string" name="accent_black" />
     <java-symbol type="string" name="accent_blue" />
     <java-symbol type="string" name="accent_brown" />
-    <java-symbol type="string" name="accent_cyan" />
     <java-symbol type="string" name="accent_green" />
-    <java-symbol type="string" name="accent_orange" />
-    <java-symbol type="string" name="accent_pink" />
-    <java-symbol type="string" name="accent_purple" />
-    <java-symbol type="string" name="accent_red" />
-    <java-symbol type="string" name="accent_yellow" />
-
+    <java-symbol type="string" name="accent_xenonhd_amber" />
+    <java-symbol type="string" name="accent_xenonhd_bluelight" />
+    <java-symbol type="string" name="accent_xenonhd_cyan" />
+    <java-symbol type="string" name="accent_xenonhd_denim" />
+    <java-symbol type="string" name="accent_xenonhd_gold" />
+    <java-symbol type="string" name="accent_xenonhd_greenlight" />
+    <java-symbol type="string" name="accent_xenonhd_lime" />
+    <java-symbol type="string" name="accent_xenonhd_orange" />
+    <java-symbol type="string" name="accent_xenonhd_oxygen" />
+    <java-symbol type="string" name="accent_xenonhd_pink" />
+    <java-symbol type="string" name="accent_xenonhd_pixel" />
+    <java-symbol type="string" name="accent_xenonhd_purple" />
+    <java-symbol type="string" name="accent_xenonhd_red" />
+    <java-symbol type="string" name="accent_xenonhd_teal" />
+    <java-symbol type="string" name="accent_xenonhd_turquoise" />
+    <java-symbol type="string" name="accent_xenonhd_yellow" />
+	
     <java-symbol type="array" name="config_vendorPlatformSignatures" />
 
     <!-- Colors -->
