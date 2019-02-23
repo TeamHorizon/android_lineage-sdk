@@ -15,15 +15,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_xenonhd_amber">Ανοικτό πορτοκαλί</string>
-    <string name="accent_xenonhd_cyan">Κυανό</string>
-    <string name="accent_xenonhd_denim">Ντένιμ</string>
-    <string name="accent_xenonhd_gold">Χρυσό</string>
-    <string name="accent_xenonhd_orange">Πορτοκαλί</string>
-    <string name="accent_xenonhd_oxygen">Οξυγόνο</string>
-    <string name="accent_xenonhd_pink">Ροζ</string>
-    <string name="accent_xenonhd_purple">Μωβ</string>
-    <string name="accent_xenonhd_teal">Πρασινομπλέ</string>
-    <string name="accent_xenonhd_turquoise">Τυρκουάζ</string>
-    <string name="accent_xenonhd_yellow">Κίτρινο</string>
+    <string name="accent_amber">Ανοικτό πορτοκαλί</string>
+    <string name="accent_black">Μαύρο</string>
+    <string name="accent_brown">Καφέ</string>
+    <string name="accent_cyan">Κυανό</string>
+    <string name="accent_denim">Ντένιμ</string>
+    <string name="accent_gold">Χρυσό</string>
+    <string name="accent_green">Πράσινο</string>
+    <string name="accent_orange">Πορτοκαλί</string>
+    <string name="accent_oxygen">Οξυγόνο</string>
+    <string name="accent_pink">Ροζ</string>
+    <string name="accent_purple">Μωβ</string>
+    <string name="accent_teal">Πρασινομπλέ</string>
+    <string name="accent_turquoise">Τυρκουάζ</string>
+    <string name="accent_yellow">Κίτρινο</string>
 </resources>

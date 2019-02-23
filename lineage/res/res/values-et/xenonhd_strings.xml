@@ -15,14 +15,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_xenonhd_amber">Merevaigukollane</string>
-    <string name="accent_xenonhd_cyan">Erksinine</string>
-    <string name="accent_xenonhd_denim">Denim</string>
-    <string name="accent_xenonhd_gold">Kuldne</string>
-    <string name="accent_xenonhd_orange">Oranž</string>
-    <string name="accent_xenonhd_pink">Roosa</string>
-    <string name="accent_xenonhd_purple">Lilla</string>
-    <string name="accent_xenonhd_teal">Sinakasroheline</string>
-    <string name="accent_xenonhd_turquoise">Türkiis</string>
-    <string name="accent_xenonhd_yellow">Kollane</string>
+    <string name="accent_amber">Merevaigukollane</string>
+    <string name="accent_black">Must</string>
+    <string name="accent_brown">Pruun</string>
+    <string name="accent_cyan">Erksinine</string>
+    <string name="accent_denim">Denim</string>
+    <string name="accent_gold">Kuldne</string>
+    <string name="accent_green">Roheline</string>
+    <string name="accent_orange">Oranž</string>
+    <string name="accent_pink">Roosa</string>
+    <string name="accent_purple">Lilla</string>
+    <string name="accent_teal">Sinakasroheline</string>
+    <string name="accent_turquoise">Türkiis</string>
+    <string name="accent_yellow">Kollane</string>
 </resources>
