@@ -46,7 +46,6 @@
     <string name="profileGroupGmail">জিমেইল</string>
     <string name="profileGroupEmail">ইমেইল</string>
     <string name="profileGroupSMS">SMS</string>
-    <!-- Name of wildcard profile. -->
     <string name="wildcardProfile">অন্যান্য</string>
     <!-- Performance profiles -->
     <string name="perf_profile_pwrsv">পাৱাৰ সংৰক্ষণ কৰক</string>
