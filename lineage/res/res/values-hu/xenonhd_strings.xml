@@ -15,10 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_amber">Borostyán</string>
-    <string name="accent_denim">Farmerkék</string>
-    <string name="accent_gold">Arany</string>
-    <string name="accent_oxygen">Oxigén</string>
-    <string name="accent_teal">Zöldeskék</string>
-    <string name="accent_turquoise">Türkiz</string>
+    <string name="accent_xenonhd_amber">Borostyán</string>
+    <string name="accent_xenonhd_denim">Farmerkék</string>
+    <string name="accent_xenonhd_gold">Arany</string>
+    <string name="accent_xenonhd_oxygen">Oxigén</string>
+    <string name="accent_xenonhd_teal">Zöldeskék</string>
+    <string name="accent_xenonhd_turquoise">Türkiz</string>
 </resources>

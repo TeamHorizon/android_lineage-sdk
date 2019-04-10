@@ -15,24 +15,24 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_amber">Bursztynowy</string>
-    <string name="accent_black">Czarna</string>
-    <string name="accent_blue">Niebieski</string>
-    <string name="accent_bluelight">Jasnoniebieski</string>
-    <string name="accent_brown">Brązowy</string>
-    <string name="accent_cyan">Błękitny</string>
-    <string name="accent_denim">Denim</string>
-    <string name="accent_gold">Złoty</string>
-    <string name="accent_green">Zielony</string>
-    <string name="accent_greenlight">Jasnozielony</string>
-    <string name="accent_lime">Limonkowy</string>
-    <string name="accent_orange">Pomarańczowy</string>
-    <string name="accent_oxygen">Tlen</string>
-    <string name="accent_pink">Różowy</string>
-    <string name="accent_pixel">Pixel</string>
-    <string name="accent_purple">Fioletowy</string>
-    <string name="accent_red">Czerwony</string>
-    <string name="accent_teal">Morski</string>
-    <string name="accent_turquoise">Turkusowy</string>
-    <string name="accent_yellow">Żółty</string>
+    <string name="accent_xenonhd_amber">Bursztynowy</string>
+    <string name="accent_xenonhd_black">Czarna</string>
+    <string name="accent_xenonhd_blue">Niebieski</string>
+    <string name="accent_xenonhd_bluelight">Jasnoniebieski</string>
+    <string name="accent_xenonhd_brown">Brązowy</string>
+    <string name="accent_xenonhd_cyan">Błękitny</string>
+    <string name="accent_xenonhd_denim">Denim</string>
+    <string name="accent_xenonhd_gold">Złoty</string>
+    <string name="accent_xenonhd_green">Zielony</string>
+    <string name="accent_xenonhd_greenlight">Jasnozielony</string>
+    <string name="accent_xenonhd_lime">Limonkowy</string>
+    <string name="accent_xenonhd_orange">Pomarańczowy</string>
+    <string name="accent_xenonhd_oxygen">Tlen</string>
+    <string name="accent_xenonhd_pink">Różowy</string>
+    <string name="accent_xenonhd_pixel">Pixel</string>
+    <string name="accent_xenonhd_purple">Fioletowy</string>
+    <string name="accent_xenonhd_red">Czerwony</string>
+    <string name="accent_xenonhd_teal">Morski</string>
+    <string name="accent_xenonhd_turquoise">Turkusowy</string>
+    <string name="accent_xenonhd_yellow">Żółty</string>
 </resources>

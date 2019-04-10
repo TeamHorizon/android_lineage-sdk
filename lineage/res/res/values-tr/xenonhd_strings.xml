@@ -15,18 +15,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_amber">Koyu sarı</string>
-    <string name="accent_black">Siyah</string>
-    <string name="accent_brown">Kahverengi</string>
-    <string name="accent_cyan">Açık mavi</string>
-    <string name="accent_denim">Denim</string>
-    <string name="accent_gold">Altın sarısı</string>
-    <string name="accent_green">Yeşil</string>
-    <string name="accent_orange">Turuncu</string>
-    <string name="accent_oxygen">Oxygen</string>
-    <string name="accent_pink">Pembe</string>
-    <string name="accent_purple">Mor</string>
-    <string name="accent_teal">Deniz mavisi</string>
-    <string name="accent_turquoise">Turkuaz</string>
-    <string name="accent_yellow">Sarı</string>
+    <string name="accent_xenonhd_amber">Koyu sarı</string>
+    <string name="accent_xenonhd_black">Siyah</string>
+    <string name="accent_xenonhd_brown">Kahverengi</string>
+    <string name="accent_xenonhd_cyan">Açık mavi</string>
+    <string name="accent_xenonhd_denim">Denim</string>
+    <string name="accent_xenonhd_gold">Altın sarısı</string>
+    <string name="accent_xenonhd_green">Yeşil</string>
+    <string name="accent_xenonhd_orange">Turuncu</string>
+    <string name="accent_xenonhd_oxygen">Oxygen</string>
+    <string name="accent_xenonhd_pink">Pembe</string>
+    <string name="accent_xenonhd_purple">Mor</string>
+    <string name="accent_xenonhd_teal">Deniz mavisi</string>
+    <string name="accent_xenonhd_turquoise">Turkuaz</string>
+    <string name="accent_xenonhd_yellow">Sarı</string>
 </resources>

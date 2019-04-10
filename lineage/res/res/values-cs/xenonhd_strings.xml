@@ -15,18 +15,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_amber">Jantarová</string>
-    <string name="accent_black">Black</string>
-    <string name="accent_brown">Hnědá</string>
-    <string name="accent_cyan">Tyrkysová</string>
-    <string name="accent_denim">Džínová</string>
-    <string name="accent_gold">Zlatá</string>
-    <string name="accent_green">Zelená</string>
-    <string name="accent_orange">Oranžová</string>
-    <string name="accent_oxygen">Oxygen</string>
-    <string name="accent_pink">Růžová</string>
-    <string name="accent_purple">Fialová</string>
-    <string name="accent_teal">Modrozelená</string>
-    <string name="accent_turquoise">Tyrkysová</string>
-    <string name="accent_yellow">Žlutá</string>
+    <string name="accent_xenonhd_amber">Jantarová</string>
+    <string name="accent_xenonhd_black">Black</string>
+    <string name="accent_xenonhd_brown">Hnědá</string>
+    <string name="accent_xenonhd_cyan">Tyrkysová</string>
+    <string name="accent_xenonhd_denim">Džínová</string>
+    <string name="accent_xenonhd_gold">Zlatá</string>
+    <string name="accent_xenonhd_green">Zelená</string>
+    <string name="accent_xenonhd_orange">Oranžová</string>
+    <string name="accent_xenonhd_oxygen">Oxygen</string>
+    <string name="accent_xenonhd_pink">Růžová</string>
+    <string name="accent_xenonhd_purple">Fialová</string>
+    <string name="accent_xenonhd_teal">Modrozelená</string>
+    <string name="accent_xenonhd_turquoise">Tyrkysová</string>
+    <string name="accent_xenonhd_yellow">Žlutá</string>
 </resources>

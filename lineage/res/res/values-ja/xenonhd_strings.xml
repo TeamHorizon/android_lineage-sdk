@@ -15,18 +15,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_amber">アンバー</string>
-    <string name="accent_black">ブラック</string>
-    <string name="accent_brown">ブラウン</string>
-    <string name="accent_cyan">シアン</string>
-    <string name="accent_denim">デニム</string>
-    <string name="accent_gold">ゴールド</string>
-    <string name="accent_green">グリーン</string>
-    <string name="accent_orange">オレンジ</string>
-    <string name="accent_oxygen">Oxygen</string>
-    <string name="accent_pink">ピンク</string>
-    <string name="accent_purple">パープル</string>
-    <string name="accent_teal">ティール</string>
-    <string name="accent_turquoise">ターコイズ</string>
-    <string name="accent_yellow">イエロー</string>
+    <string name="accent_xenonhd_amber">アンバー</string>
+    <string name="accent_xenonhd_black">ブラック</string>
+    <string name="accent_xenonhd_brown">ブラウン</string>
+    <string name="accent_xenonhd_cyan">シアン</string>
+    <string name="accent_xenonhd_denim">デニム</string>
+    <string name="accent_xenonhd_gold">ゴールド</string>
+    <string name="accent_xenonhd_green">グリーン</string>
+    <string name="accent_xenonhd_orange">オレンジ</string>
+    <string name="accent_xenonhd_oxygen">Oxygen</string>
+    <string name="accent_xenonhd_pink">ピンク</string>
+    <string name="accent_xenonhd_purple">パープル</string>
+    <string name="accent_xenonhd_teal">ティール</string>
+    <string name="accent_xenonhd_turquoise">ターコイズ</string>
+    <string name="accent_xenonhd_yellow">イエロー</string>
 </resources>

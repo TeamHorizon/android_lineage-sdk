@@ -15,18 +15,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_amber">كهرماني</string>
-    <string name="accent_black">أسود</string>
-    <string name="accent_brown">بني</string>
-    <string name="accent_cyan">سماوي</string>
-    <string name="accent_denim">دنيم</string>
-    <string name="accent_gold">ذهبي</string>
-    <string name="accent_green">أخضر</string>
-    <string name="accent_orange">برتقالي</string>
-    <string name="accent_oxygen">الأكسجين</string>
-    <string name="accent_pink">وردي</string>
-    <string name="accent_purple">أرجواني</string>
-    <string name="accent_teal">أزرق مخضّر</string>
-    <string name="accent_turquoise">فيروز</string>
-    <string name="accent_yellow">أصفر</string>
+    <string name="accent_xenonhd_amber">كهرماني</string>
+    <string name="accent_xenonhd_black">أسود</string>
+    <string name="accent_xenonhd_brown">بني</string>
+    <string name="accent_xenonhd_cyan">سماوي</string>
+    <string name="accent_xenonhd_denim">دنيم</string>
+    <string name="accent_xenonhd_gold">ذهبي</string>
+    <string name="accent_xenonhd_green">أخضر</string>
+    <string name="accent_xenonhd_orange">برتقالي</string>
+    <string name="accent_xenonhd_oxygen">الأكسجين</string>
+    <string name="accent_xenonhd_pink">وردي</string>
+    <string name="accent_xenonhd_purple">أرجواني</string>
+    <string name="accent_xenonhd_teal">أزرق مخضّر</string>
+    <string name="accent_xenonhd_turquoise">فيروز</string>
+    <string name="accent_xenonhd_yellow">أصفر</string>
 </resources>

@@ -14,24 +14,24 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="accent_amber">Amber</string>
-    <string name="accent_black">Black</string>
-    <string name="accent_blue">Blue</string>
-    <string name="accent_bluelight">BlueLight</string>
-    <string name="accent_brown">Brown</string>
-    <string name="accent_cyan">Cyan</string>
-    <string name="accent_denim">Denim</string>
-    <string name="accent_gold">Gold</string>
-    <string name="accent_green">Green</string>
-    <string name="accent_greenlight">GreenLight</string>
-    <string name="accent_lime">Lime</string>
-    <string name="accent_orange">Orange</string>
-    <string name="accent_oxygen">Oxygen</string>
-    <string name="accent_pink">Pink</string>
-    <string name="accent_pixel">Pixel</string>
-    <string name="accent_purple">Purple</string>
-    <string name="accent_red">Red</string>
-    <string name="accent_teal">Teal</string>
-    <string name="accent_turquoise">Turquoise</string>
-    <string name="accent_yellow">Yellow</string>
+    <string name="accent_xenonhd_amber">Amber</string>
+    <string name="accent_xenonhd_black">Black</string>
+    <string name="accent_xenonhd_blue">Blue</string>
+    <string name="accent_xenonhd_bluelight">BlueLight</string>
+    <string name="accent_xenonhd_brown">Brown</string>
+    <string name="accent_xenonhd_cyan">Cyan</string>
+    <string name="accent_xenonhd_denim">Denim</string>
+    <string name="accent_xenonhd_gold">Gold</string>
+    <string name="accent_xenonhd_green">Green</string>
+    <string name="accent_xenonhd_greenlight">GreenLight</string>
+    <string name="accent_xenonhd_lime">Lime</string>
+    <string name="accent_xenonhd_orange">Orange</string>
+    <string name="accent_xenonhd_oxygen">Oxygen</string>
+    <string name="accent_xenonhd_pink">Pink</string>
+    <string name="accent_xenonhd_pixel">Pixel</string>
+    <string name="accent_xenonhd_purple">Purple</string>
+    <string name="accent_xenonhd_red">Red</string>
+    <string name="accent_xenonhd_teal">Teal</string>
+    <string name="accent_xenonhd_turquoise">Turquoise</string>
+    <string name="accent_xenonhd_yellow">Yellow</string>
 </resources>
