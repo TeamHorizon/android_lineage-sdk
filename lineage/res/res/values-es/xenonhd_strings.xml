@@ -19,12 +19,14 @@
     <string name="accent_xenonhd_black">Negrita</string>
     <string name="accent_xenonhd_brown">Marrón</string>
     <string name="accent_xenonhd_cyan">Cian</string>
+    <string name="accent_xenonhd_denim">Denim</string>
     <string name="accent_xenonhd_gold">Oro</string>
     <string name="accent_xenonhd_green">Verde</string>
     <string name="accent_xenonhd_orange">Naranja</string>
     <string name="accent_xenonhd_oxygen">Oxygen</string>
     <string name="accent_xenonhd_pink">Rosa</string>
     <string name="accent_xenonhd_purple">Morado</string>
+    <string name="accent_xenonhd_teal">Verde Azulado</string>
     <string name="accent_xenonhd_turquoise">Turquesa</string>
     <string name="accent_xenonhd_yellow">Amarillo</string>
 </resources>
