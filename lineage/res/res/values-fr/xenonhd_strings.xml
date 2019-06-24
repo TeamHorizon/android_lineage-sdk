@@ -15,5 +15,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="accent_xenonhd_amber">Ambre</string>
     <string name="accent_xenonhd_black">Noir</string>
+    <string name="accent_xenonhd_brown">Marron</string>
+    <string name="accent_xenonhd_cyan">Cyan</string>
+    <string name="accent_xenonhd_denim">Denim</string>
+    <string name="accent_xenonhd_gold">Or</string>
+    <string name="accent_xenonhd_green">Vert</string>
+    <string name="accent_xenonhd_orange">Orange</string>
+    <string name="accent_xenonhd_oxygen">Oxygen</string>
+    <string name="accent_xenonhd_pink">Rose</string>
+    <string name="accent_xenonhd_purple">Violet</string>
+    <string name="accent_xenonhd_teal">Teal</string>
+    <string name="accent_xenonhd_turquoise">Turquoise</string>
+    <string name="accent_xenonhd_yellow">Jaune</string>
 </resources>
