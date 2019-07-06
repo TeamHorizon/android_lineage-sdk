@@ -28,12 +28,7 @@
     <!-- Labels for the PROTECTED_APP permission. -->
     <string name="permlab_protectedApp">tilføj og fjern apps til beskyttet apps</string>
     <string name="permdesc_protectedApp">Tillader en app at markere andre apps som beskyttet samt låse dem.</string>
-    <!-- Labels for CHANGE_STYLE permission -->
-    <!-- this is wrong, but google's package manager uses the android:description
-         attribute as description for the runtime permission request dialog
-         with non-default dangerous permissions -->
-    <!-- Profiles -->
-    <!-- Names of default profiles. -->
+    <string name="permdesc_changeStyle">tilpas system-farverne</string>
     <string name="profileNameDefault">Standard</string>
     <string name="profileNameWork">Arbejde</string>
     <string name="profileNameHome">Hjem</string>
@@ -82,11 +77,8 @@
     <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay ændret til dag tilstand.</string>
     <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay ændret til nat tilstand.</string>
     <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay ændret til udendørstilstand.</string>
-    <!-- Performance manager permission title -->
-    <string name="permlab_perfAccess">tilgå ydelsesmanager</string>
-    <!-- Performance manager permission description -->
-    <string name="permdesc_perfAccessDesc">Tillader en app at tilgå ydelsestjenesten. Bør aldrig være nødvendigt for alm. apps.</string>
-    <!-- Weather Service strings -->
+    <string name="permlab_perfAccess">tilgå ydelseshåndtering</string>
+    <string name="permdesc_perfAccessDesc">Tillader en app at tilgå ydelsestjenesten. Bør aldrig være nødvendigt for normale apps.</string>
     <string name="permlab_weather_read">læs vejret</string>
     <string name="permdesc_weather_read">Tillader en app at læse indholdet fra en vejr-udbyder.</string>
     <string name="permlab_weather_write">opdater vejr-udbyder</string>
@@ -103,27 +95,14 @@
     <string name="permlab_dataUsageRead">læs database for dataforbrug</string>
     <!-- DataUsageProvider read permission description -->
     <string name="permdesc_dataUsageRead">Tillader en app at læse indholdet af databasen for dataforbrug.</string>
-    <!-- LiveDisplay manager permission -->
-    <string name="permlab_manageLiveDisplay">administrer indstillinger for LiveDisplay</string>
+    <string name="permlab_manageLiveDisplay">håndtér LevendeDisplay-indstillinger</string>
     <string name="permdesc_manageLiveDisplay">Tillader en app at konfigurere avancerede skærmindstillinger.</string>
     <!-- LineageAudioService - observe session changes permission -->
     <string name="permlab_observe_audio_sessions">observér ændringer for lydsession</string>
     <string name="permdesc_observe_audio_sessions">Tillader en app at observere når lyd streams bliver oprettet eller ødelagt.</string>
     <!-- Privacy Guard -->
     <string name="privacy_guard_manager_title">Privatlivsvagt</string>
-    <!-- Permissions used by remote preferences -->
-    <string name="permlab_manageRemotePrefs">administrere indstillinger for fjernbetjening</string>
-    <string name="permdesc_manageRemotePrefs">Gør det muligt for en app til at administrere indstillinger for fjernbetjening</string>
-    <!-- About device screen, build date -->
-    <!-- About device screen, LineageOS API Level -->
-    <!-- About device screen, LineageOS updates -->
-    <!-- About device screen, LineageOS version -->
-    <!-- About device screen, vendor security patch -->
-    <!-- General purpose use "unknown" string -->
-    <!-- Long-press back kill application -->
-    <!-- Status bar network traffic monitor strings -->
-    <!-- Trust interface -->
-    <!-- This string will be referenced from other apps when they're referring to the Trust interface.
-         Trust is a feature name, it's not suggested to translate this unless there are conflicts due
-         to a different meaning of the word "trust" in your language -->
+    <string name="permlab_manageRemotePrefs">håndtere fjernbetjeningsindstillinger</string>
+    <string name="permdesc_manageRemotePrefs">Tillader en app at håndtere fjernbetjeningsindstillinger</string>
+    <string name="trust_notification_action_manage">Håndtér advarsler</string>
 </resources>
