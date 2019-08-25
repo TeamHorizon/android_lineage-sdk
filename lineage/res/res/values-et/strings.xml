@@ -119,8 +119,8 @@
     <string name="permdesc_observe_audio_sessions">Lubab rakendusel jälgida helivoogude alustamist ja lõpetamist.</string>
     <!-- Privacy Guard -->
     <string name="privacy_guard_manager_title">Privaatsuskaitse</string>
-    <!-- Permissions used by remote preferences -->
-    <!-- About device screen, build date -->
+    <string name="permlab_manageRemotePrefs">kaugtöölaua sätete haldamine</string>
+    <string name="permdesc_manageRemotePrefs">Võimaldab rakendusel hallata kaugtöölaua sätteid</string>
     <string name="build_date">Järgu kuupäev</string>
     <!-- About device screen, LineageOS API Level -->
     <string name="lineage_api_level">LineageOS\'i API tase</string>
