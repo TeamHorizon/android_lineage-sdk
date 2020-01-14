@@ -130,9 +130,7 @@
     <string name="lineage_updates">LineageOS eguneraketak</string>
     <!-- About device screen, LineageOS version -->
     <string name="lineage_version">LineageOS bertsioa</string>
-    <!-- About device screen, vendor security patch -->
-    <string name="lineage_vendor_security_patch">Saltzailearen segurtasun partxe maila</string>
-    <!-- General purpose use "unknown" string -->
+    <string name="lineage_vendor_security_patch">Ekoizlearen segurtasun partxe maila</string>
     <string name="unknown">Ezezaguna</string>
     <!-- Long-press back kill application -->
     <string name="app_killed_message">Aplikazioa erail da</string>
